@@ -1,10 +1,10 @@
 # csc413-tankgame
 
 
-| Student Information |                |
-|:-------------------:|----------------|
-|  Student Name       |   Name Here    |
-|  Student Email      |   Email Here   |
+| Student Information |                              |
+|:-------------------:|------------------------------|
+|  Student Name       |   Wameedh Mohammed Ali       |
+|  Student Email      |   wmohammedali@mail.sfsu.edu |
 
 ## src Folder Purpose 
 src folder is to be used to store source code only.
