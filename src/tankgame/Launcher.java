@@ -1,7 +1,6 @@
 package tankgame;
 
 
-
 import tankgame.game.TRE;
 import tankgame.menus.EndGamePanel;
 import tankgame.menus.StartMenuPanel;
@@ -80,9 +79,10 @@ public class Launcher {
                 break;
             case "tankgame/game":
                 // set the size of the jFrame to the expected size for the game panel
-                this.jf.setSize(GameConstants.GAME_SCREEN_WIDTH,GameConstants.GAME_SCREEN_HEIGHT);
+                this.jf.setSize(GameConstants.SCREEN_WIDTH,GameConstants.SCREEN_HEIGHT + 270);
                 //start a new thread for the game to run. This will ensure our JFrame is responsive and
                 // not stuck executing the game loop.
+
                 (new Thread(this.gamePanel)).start();
                 break;
             case "end":
