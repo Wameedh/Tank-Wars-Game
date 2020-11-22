@@ -1,4 +1,4 @@
-package tankgame.game.Stationary;
+package tankgame.game.stationaryObjects;
 
 import tankgame.game.CollidableObject;
 import tankgame.game.moveableObjects.Tank;
@@ -6,9 +6,13 @@ import tankgame.game.moveableObjects.Tank;
 import java.awt.*;
 import java.awt.image.BufferedImage;
 
-public class addLifePowerUp extends Stationary {
+/**
+ *
+ * @author Wameedh Mohammed Ali
+ */
+public class SpeedBoost  extends Stationary {
 
-    public addLifePowerUp(int x, int y, int TileWidth, int TileHeight, BufferedImage image, Graphics2D buffer, int width, int height, int powerUp) {
+    public SpeedBoost(int x, int y, int TileWidth, int TileHeight, BufferedImage image, Graphics2D buffer, int width, int height, int powerUp) {
         super(x, y, TileWidth, TileHeight, image, buffer, width, height);
 
     }
@@ -18,9 +22,14 @@ public class addLifePowerUp extends Stationary {
         if(c instanceof Tank){
             if(this.getRectangle().intersects(c.getRectangle())){
                 setCollided(true);
-                ((Tank) c).addLife();
+                ((Tank) c).SpeedBoost();
             }
         }
     }
+    @Override
+    public Rectangle getRectangle() {
+        return new Rectangle(getX(), getY(), getTileWidth(), getTileHeight());
+    }
+
 
 }

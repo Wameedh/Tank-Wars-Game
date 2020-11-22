@@ -8,7 +8,7 @@ import java.util.ArrayList;
 import java.awt.image.BufferedImage;
 
 import tankgame.GameConstants;
-import tankgame.game.Stationary.*;
+import tankgame.game.stationaryObjects.*;
 
 public class Map {
 
@@ -78,7 +78,7 @@ public class Map {
                 } else if (map.get(j).get(i) == 2) {
                     allWalls.add(new Wall(i * tileWidth, j * tileHeight, tileWidth, tileHeight, breakableWall, buffer, i, j, true));
                 } else if (map.get(j).get(i) == 3) {
-                    allPowers.add(new addLifePowerUp(i * tileWidth, j * tileHeight, extraLifetileWidth, extraLifetileHeight, extraLife,buffer,i,j, 1));
+                    allPowers.add(new AddLifePowerUp(i * tileWidth, j * tileHeight, extraLifetileWidth, extraLifetileHeight, extraLife,buffer,i,j, 1));
                 } else if (map.get(j).get(i) == 4) {
                     allPowers.add(new SpeedBoost(i * tileWidth, j * tileHeight, tileWidth, tileHeight, speedBoost,buffer,i,j, 2));
                 }

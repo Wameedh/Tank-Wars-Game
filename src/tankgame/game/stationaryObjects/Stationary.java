@@ -1,4 +1,4 @@
-package tankgame.game.Stationary;
+package tankgame.game.stationaryObjects;
 
 import tankgame.game.CollidableObject;
 
